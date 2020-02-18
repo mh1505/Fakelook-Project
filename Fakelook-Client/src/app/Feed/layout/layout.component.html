@@ -1,0 +1,7 @@
+<p>layout works!</p>
+<span>
+    <button (click)='showScrolle=false'>Map View</button>
+    <button (click)='showScrolle=true'>Scroll View</button>
+</span>
+<app-map *ngIf="!showScrolle"></app-map>
+<app-scroll-feed *ngIf="showScrolle"></app-scroll-feed>

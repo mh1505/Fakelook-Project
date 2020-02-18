@@ -1,0 +1,15 @@
+<div class="divMap">
+    <agm-map [latitude]="lat" [longitude]="long">
+        <div *ngFor="let post of postsList">
+            <agm-marker [latitude]='post.Latitude' [longitude]='post.Longitude' >
+                <div id="div-info-marker">
+                    <agm-info-window>
+                        <div id="divNmae">{{post.FirstName +" "+ post.LastName}}</div>
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&w=1000&q=80">
+                        <div id="divDate">{{post.date }}</div>
+                    </agm-info-window>
+                </div>
+            </agm-marker>
+        </div>
+    </agm-map>
+</div>

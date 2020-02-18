@@ -1,0 +1,29 @@
+agm-map {
+    height: 400px;
+    width: 700px;
+}
+
+.divMap {
+    height: 400px;
+    width: 700px;
+    margin-left: 400px;
+}
+
+#div-info-marker {
+    height: 40px;
+    width: 30px;
+    margin: auto;
+}
+
+#divName {
+    font-size: 15px;
+}
+
+#divDate {
+    font-size: 10px;
+}
+
+img {
+    height: 100px;
+    width: 135px;
+}

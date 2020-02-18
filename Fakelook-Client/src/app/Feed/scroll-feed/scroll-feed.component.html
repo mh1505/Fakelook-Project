@@ -1,0 +1,31 @@
+<!--  <p>scroll-feed works!</p> -->
+<ul>
+    <li *ngFor="let tag of tagsList$ | async">{{"#" + tag.Text}}</li>
+</ul>
+
+<!-- <app-post-card *ngFor="let post of postsList"></app-post-card> --> 
+
+
+<div class="div-post-card" *ngFor="let post of postsList">
+    <div id="divPost">
+        <div id="divName">{{post.FirstName +" "+ post.LastName}}</div>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&w=1000&q=80" />     
+        <br>
+        <span>{{post.Date}}</span>
+
+        <div id="divText">text</div>
+        <br>
+
+        <div id="divLike">likes</div>
+        <br>
+
+        <div id="divTags">tags</div>
+        <br>
+    </div>
+
+    <!-- <div id="divComments"  *ngFor='let comment of comments'>
+        <span>{{comment.user}}</span>
+        <div id="comments"></div>
+    </div> -->
+
+</div>

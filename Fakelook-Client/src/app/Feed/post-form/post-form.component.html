@@ -1,0 +1,17 @@
+<form [formGroup]="postFormGroup" (ngSubmit)="saveNewPost()">
+    <label>UpLoad Your Photo</label>
+    <input type="file" formControlName="photo">
+    <div *ngIf='postFormGroup.get("photo").erorrs?.required && postFormGroup.get("photo").touched'>photo is a required field</div>
+
+    <label>Your Text</label>
+    <input type="text" formControlName="text">
+
+    <label>Tag</label>
+    <input type="text" formControlName="tag">
+
+    <label>Tagged Your Freinds</label>
+    <textarea formControlName="taggedUser"></textarea>
+
+    <button type="submit">GO!</button>
+    
+</form>

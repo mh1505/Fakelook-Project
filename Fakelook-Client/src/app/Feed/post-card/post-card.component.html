@@ -1,0 +1,30 @@
+<!-- <p>post-card works!</p> -->
+
+<div>
+    <img>
+    <br>
+    <input type="text">
+    <!-- {{post.date}} -->
+
+    <br>
+    <input type="text" >
+     <!-- {{post.text}} -->
+
+     <br>
+    <label>Tags</label>
+    <input type="text">
+    <!-- {{tags.userId}} -->
+
+    <br>
+    <label>Likes</label>
+    <input type="text">{{likes.length}}
+    
+</div>
+
+<div *ngFor='let comment of comments'>
+    <span>
+        <!-- {{comment.}} -->
+    </span>
+    <input type="text">
+    <!-- {{comment.text}} -->
+</div>
